@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Emergency Request - HelpNearby</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+<body class="emergency-request-page">
+    <main class="auth-section">
+        <section class="auth-container">
+            <a class="register-brand" href="dashboard.html">
+                <span class="login-brand-mark">+</span>
+                <span>Help<span>Nearby</span></span>
+            </a>
+            <h1>Create Emergency Request</h1>
+            <p>Tell nearby volunteers what help you need.</p>
+
+            <form class="create-emergency-form">
+                <div class="form-group">
+                    <label for="requesterEmail">Your Email</label>
+                    <input type="email" id="requesterEmail" placeholder="Enter your registered email" required>
+                </div>
+                <div class="form-group">
+                    <label for="category">Emergency Type</label>
+                    <select id="category" required>
+                        <option value="">Select emergency type</option>
+                        <option value="Medical Emergency">Medical Emergency</option>
+                        <option value="Accident">Accident</option>
+                        <option value="Blood Requirement">Blood Requirement</option>
+                        <option value="Fire Emergency">Fire Emergency</option>
+                        <option value="Missing Person">Missing Person</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="description">What happened?</label>
+                    <textarea id="description" rows="4" placeholder="Describe the emergency" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <input type="text" id="location" placeholder="Enter emergency location" required>
+                </div>
+                <div class="form-group">
+                    <label for="priority">Priority</label>
+                    <select id="priority" required>
+                        <option value="NORMAL">Normal</option>
+                        <option value="URGENT">Urgent</option>
+                        <option value="CRITICAL">Critical</option>
+                    </select>
+                </div>
+                <button type="submit">Submit Emergency Request</button>
+            </form>
+            <p><a href="dashboard.html">Back to Dashboard</a></p>
+        </section>
+    </main>
+</body>
+</html>

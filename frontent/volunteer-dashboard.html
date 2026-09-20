@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Dashboard - HelpNearby</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body class="dashboard-page volunteer-dashboard-page">
+    <main class="dashboard-shell">
+        <aside class="dashboard-sidebar">
+            <a class="dashboard-brand" href="index.html">
+                <span class="dashboard-brand-mark">+</span>
+                <span>Help<span>Nearby</span></span>
+            </a>
+
+            <div class="dashboard-profile">
+                <div class="profile-avatar volunteer-profile-avatar">AS</div>
+                <div>
+                    <strong>Amir Sharma</strong>
+                    <small>Volunteer</small>
+                </div>
+            </div>
+
+            <nav class="dashboard-nav" aria-label="Volunteer dashboard navigation">
+                <a class="active" href="volunteer-dashboard.html"><span class="nav-icon dashboard-icon"></span> Dashboard</a>
+                <a href="find-help.html"><span class="nav-icon users-icon"></span> Nearby Requests</a>
+                <a href="request-help.html"><span class="nav-icon requests-icon"></span> My Requests</a>
+                <a href="about.html"><span class="nav-icon profile-icon"></span> Profile</a>
+                <a href="index.html"><span class="nav-icon logout-icon"></span> Logout</a>
+            </nav>
+        </aside>
+
+        <section class="dashboard-content volunteer-content">
+            <header class="dashboard-topbar volunteer-topbar">
+                <div>
+                    <p class="dashboard-kicker">Hello, Amir <span class="greeting-icon" aria-hidden="true"></span></p>
+                    <p class="dashboard-subtitle">Help is just around the corner.</p>
+                </div>
+                <label class="availability-toggle">
+                    <span>Available</span>
+                    <input type="checkbox" checked>
+                    <i></i>
+                </label>
+            </header>
+
+            <section class="volunteer-stats" aria-label="Volunteer summary">
+                <article class="volunteer-stat requests-stat"><span class="stat-icon request-stat-icon"></span><div><small>Nearby Requests</small><strong>5</strong></div></article>
+                <article class="volunteer-stat accepted-stat"><span class="stat-icon accepted-stat-icon"></span><div><small>Accepted</small><strong>2</strong></div></article>
+                <article class="volunteer-stat completed-stat"><span class="stat-icon completed-stat-icon"></span><div><small>Completed</small><strong>8</strong></div></article>
+            </section>
+
+            <section class="nearby-requests-panel" data-volunteer-requests>
+                <div class="dashboard-section-heading nearby-heading">
+                    <h2>Nearby Emergency Requests</h2>
+                    <a href="find-help.html">View All <span class="arrow-icon" aria-hidden="true"></span></a>
+                </div>
+
+                <p data-request-message>Loading pending requests...</p>
+            </section>
+        </section>
+    </main>
+</body>
+</html>

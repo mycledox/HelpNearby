@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard - HelpNearby</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="dashboard-page">
+    <main class="dashboard-shell">
+        <aside class="dashboard-sidebar">
+            <a class="dashboard-brand" href="index.html">
+                <span class="dashboard-brand-mark">+</span>
+                <span>Help<span>Nearby</span></span>
+            </a>
+
+            <div class="dashboard-profile">
+                <div class="profile-avatar">RH</div>
+                <div>
+                    <strong>Rahul Kumar</strong>
+                    <small>User</small>
+                </div>
+            </div>
+
+            <nav class="dashboard-nav" aria-label="Dashboard navigation">
+                <a class="active" href="dashboard.html"><span class="nav-icon dashboard-icon"></span> Dashboard</a>
+                <a href="create-emergency.html"><span class="nav-icon add-icon"></span> Create Emergency</a>
+                <a href="find-help.html"><span class="nav-icon requests-icon"></span> My Requests</a>
+                <a href="emergency-requests.html"><span class="nav-icon alert-icon"></span> Emergency Contacts</a>
+                <a href="about.html"><span class="nav-icon profile-icon"></span> Profile</a>
+                <a href="index.html"><span class="nav-icon logout-icon"></span> Logout</a>
+            </nav>
+        </aside>
+
+        <section class="dashboard-content">
+            <header class="dashboard-topbar">
+                <div>
+                    <p class="dashboard-kicker">User Dashboard</p>
+                    <h1>Hello, Rahul Kumar <span class="greeting-icon" aria-hidden="true"></span></h1>
+                    <p class="dashboard-subtitle">Stay safe. We are here to help you.</p>
+                </div>
+                <div class="dashboard-actions">
+                    <button class="notification-button" aria-label="Notifications"></button>
+                    <div class="small-avatar">RK</div>
+                </div>
+            </header>
+
+            <section class="quick-emergency" aria-label="Quick emergency request">
+                <div class="quick-icon">!</div>
+                <div>
+                    <strong>Quick Emergency</strong>
+                    <small>Need immediate help?</small>
+                </div>
+                <a href="create-emergency.html">Create Request <span class="arrow-icon" aria-hidden="true"></span></a>
+            </section>
+
+            <section class="dashboard-stats" aria-label="Request summary">
+                <article class="dashboard-stat"><small>Total Requests</small><strong>3</strong><span class="stat-blue">All time</span></article>
+                <article class="dashboard-stat"><small>Active Requests</small><strong>1</strong><span class="stat-orange">Needs attention</span></article>
+                <article class="dashboard-stat"><small>Resolved</small><strong>2</strong><span class="stat-green">Successfully helped</span></article>
+            </section>
+
+            <div class="dashboard-grid">
+                <section class="recent-requests">
+                    <div class="dashboard-section-heading">
+                        <h2>Recent Requests</h2>
+                        <a href="find-help.html">View All <span class="arrow-icon" aria-hidden="true"></span></a>
+                    </div>
+
+                    <article class="request-row">
+                        <span class="request-marker">+</span>
+                        <div><strong>Medical Emergency</strong><small>Today, 10:30 AM <span class="separator-icon"></span> Nearby Area</small></div>
+                        <span class="request-status progress">In Progress</span>
+                    </article>
+                    <article class="request-row">
+                        <span class="request-marker">+</span>
+                        <div><strong>Accident</strong><small>Yesterday, 04:15 PM <span class="separator-icon"></span> Main Road</small></div>
+                        <span class="request-status resolved">Resolved</span>
+                    </article>
+                    <article class="request-row">
+                        <span class="request-marker">+</span>
+                        <div><strong>Blood Requirement</strong><small>May 28, 2026 <span class="separator-icon"></span> City Hospital</small></div>
+                        <span class="request-status resolved">Resolved</span>
+                    </article>
+                </section>
+
+                <aside class="dashboard-right-column">
+                    <section class="map-card">
+                        <div class="dashboard-section-heading"><h2>Your Location</h2><span>Live</span></div>
+                        <div class="map-preview" aria-label="Map showing your location"><span class="map-road road-one"></span><span class="map-road road-two"></span><span class="map-pin"></span></div>
+                    </section>
+
+                    <section class="volunteer-card">
+                        <div class="dashboard-section-heading"><h2>Nearby Volunteers</h2><a href="find-help.html">View All</a></div>
+                        <div class="volunteer-row"><span class="volunteer-avatar">AS</span><div><strong>Arjun Sharma</strong><small>2.1 km away <span class="separator-icon"></span> Available</small></div><button>Contact</button></div>
+                        <div class="volunteer-row"><span class="volunteer-avatar violet">NS</span><div><strong>Neha Singh</strong><small>3.5 km away <span class="separator-icon"></span> Available</small></div><button>Contact</button></div>
+                        <div class="volunteer-row"><span class="volunteer-avatar green">RK</span><div><strong>Rohit Verma</strong><small>4.2 km away <span class="separator-icon"></span> Available</small></div><button>Contact</button></div>
+                    </section>
+                </aside>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

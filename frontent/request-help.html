@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Requests - HelpNearby</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="dashboard-page my-requests-page">
+    <main class="dashboard-shell">
+        <aside class="dashboard-sidebar">
+            <a class="dashboard-brand" href="index.html">
+                <span class="dashboard-brand-mark">+</span>
+                <span>Help<span>Nearby</span></span>
+            </a>
+
+            <div class="dashboard-profile">
+                <div class="profile-avatar">RK</div>
+                <div>
+                    <strong>Rahul Kumar</strong>
+                    <small>User</small>
+                </div>
+            </div>
+
+            <nav class="dashboard-nav" aria-label="Dashboard navigation">
+                <a href="dashboard.html"><span class="nav-icon dashboard-icon"></span> Dashboard</a>
+                <a href="emergency-requests.html"><span class="nav-icon add-icon"></span> Create Emergency</a>
+                <a class="active" href="request-help.html"><span class="nav-icon requests-icon"></span> My Requests</a>
+                <a href="emergency-requests.html"><span class="nav-icon alert-icon"></span> Emergency Contacts</a>
+                <a href="about.html"><span class="nav-icon profile-icon"></span> Profile</a>
+                <a href="index.html"><span class="nav-icon logout-icon"></span> Logout</a>
+            </nav>
+        </aside>
+
+        <section class="dashboard-content requests-content">
+            <header class="dashboard-topbar requests-topbar">
+                <div>
+                    <p class="dashboard-kicker">My Requests</p>
+                    <p class="dashboard-subtitle">Track and manage all your emergency requests.</p>
+                </div>
+                <div class="dashboard-actions">
+                    <button class="notification-button" aria-label="Notifications"></button>
+                    <div class="small-avatar">RK</div>
+                </div>
+            </header>
+
+            <nav class="request-filters" aria-label="Filter requests">
+                <a class="active" href="request-help.html">All</a>
+                <a href="#active">Active</a>
+                <a href="#resolved">Resolved</a>
+                <a href="#cancelled">Cancelled</a>
+            </nav>
+
+            <section class="request-list-panel" aria-label="My emergency requests">
+                <article class="my-request-card" id="active">
+                    <span class="request-type-icon medical-request">+</span>
+                    <div class="my-request-details">
+                        <div class="request-title-line"><h2>Medical Emergency</h2><span class="priority-badge critical-badge">Critical</span></div>
+                        <p>College Campus <span class="separator-icon"></span> 15 Aug 2025, 10:24 AM</p>
+                    </div>
+                    <span class="request-status progress">In Progress</span>
+                </article>
+
+                <article class="my-request-card">
+                    <span class="request-type-icon accident-request">+</span>
+                    <div class="my-request-details">
+                        <div class="request-title-line"><h2>Accident</h2><span class="priority-badge urgent-badge">Urgent</span></div>
+                        <p>Main Road <span class="separator-icon"></span> 12 Aug 2025, 06:30 PM</p>
+                    </div>
+                    <span class="request-status resolved">Resolved</span>
+                </article>
+
+                <article class="my-request-card">
+                    <span class="request-type-icon blood-request">+</span>
+                    <div class="my-request-details">
+                        <div class="request-title-line"><h2>Blood Requirement</h2><span class="priority-badge critical-badge">Critical</span></div>
+                        <p>City Hospital <span class="separator-icon"></span> 10 Aug 2025, 11:15 AM</p>
+                    </div>
+                    <span class="request-status resolved">Resolved</span>
+                </article>
+
+                <article class="my-request-card" id="resolved">
+                    <span class="request-type-icon missing-request">+</span>
+                    <div class="my-request-details">
+                        <div class="request-title-line"><h2>Missing Person</h2><span class="priority-badge normal-badge">Normal</span></div>
+                        <p>Bus Stand <span class="separator-icon"></span> 08 Aug 2025, 09:20 AM</p>
+                    </div>
+                    <span class="request-status resolved">Resolved</span>
+                </article>
+            </section>
+        </section>
+    </main>
+</body>
+</html>

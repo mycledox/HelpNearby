@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register - HelpNearby</title>
+
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body class="register-page">
+
+    <main class="auth-section register-auth">
+
+        <div class="auth-container register-container">
+
+            <a class="register-brand" href="index.html">
+                <span class="login-brand-mark">+</span>
+                <span>Help<span>Nearby</span></span>
+            </a>
+
+            <h1>Create Your Account</h1>
+
+            <p>
+                Join our community and be a part of<br>the emergency help network.
+            </p>
+
+            <div class="role-options" aria-label="Choose account type">
+                <label class="role-option active">
+                    <input type="radio" name="role" value="user" checked>
+                    <span class="role-icon user-role-icon"></span>
+                    <strong>User</strong>
+                    <small>Need Help</small>
+                </label>
+                <label class="role-option">
+                    <input type="radio" name="role" value="volunteer">
+                    <span class="role-icon volunteer-role-icon"></span>
+                    <strong>Volunteer</strong>
+                    <small>Help Others</small>
+                </label>
+            </div>
+
+
+            <form>
+
+                <div class="form-group">
+
+                    <label for="name">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your full name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="phone">
+                        Phone Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        placeholder="Enter your phone number"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="password">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Create a password"
+                        required
+                    >
+
+                </div>
+
+
+                <button type="submit">
+                    Register
+                </button>
+
+            </form>
+
+
+            <p>
+                Already have an account? <a href="login.html">Login</a>
+            </p>
+
+        </div>
+
+    </main>
+
+</body>
+</html>

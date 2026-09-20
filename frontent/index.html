@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpNearby - Home</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+
+<body class="home-page">
+
+    <header class="header home-header">
+        <a class="logo" href="index.html" aria-label="HelpNearby home">
+            <span class="logo-mark">+</span>
+            <span>Help<span>Nearby</span></span>
+        </a>
+
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="active" href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="find-help.html">Safety</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="header-buttons">
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="home-hero">
+            <div class="hero-copy">
+                <p class="eyebrow"><span></span> Community-powered emergency support</p>
+                <h1>When Every<br><strong>Second</strong> Matters.</h1>
+                <p class="hero-description">
+                    HelpNearby connects people in emergency<br class="desktop-break">
+                    with nearby volunteers, because real help<br class="desktop-break">
+                    should never be far away.
+                </p>
+                <div class="hero-buttons">
+                    <a class="primary-action" href="create-emergency.html">Create Emergency Request <span class="arrow-icon" aria-hidden="true"></span></a>
+                    <a class="text-action" href="find-help.html">Learn More <span class="arrow-icon" aria-hidden="true"></span></a>
+                </div>
+            </div>
+
+            <div class="hero-visual" aria-label="People helping each other">
+                <div class="hero-visual-copy">Together<br><strong>We Care.</strong><br>Save Lives</div>
+                <span class="pulse-line">~</span>
+            </div>
+        </section>
+
+        <section class="emergency-panel" aria-labelledby="emergency-title">
+            <div class="panel-heading">
+                <div>
+                    <p class="eyebrow">Find the right support</p>
+                    <h2 id="emergency-title">How can we help?</h2>
+                </div>
+                <a href="find-help.html" class="view-all">View all requests <span class="arrow-icon" aria-hidden="true"></span></a>
+            </div>
+
+            <div class="emergency-grid">
+                <a class="emergency-card medical" href="create-emergency.html"><span class="emergency-card-icon medical-icon"></span><strong>Medical</strong><small>Emergency</small></a>
+                <a class="emergency-card blood" href="create-emergency.html"><span class="emergency-card-icon blood-icon"></span><strong>Blood</strong><small>Request</small></a>
+                <a class="emergency-card fire" href="create-emergency.html"><span class="emergency-card-icon fire-icon"></span><strong>Fire</strong><small>Emergency</small></a>
+                <a class="emergency-card accident" href="create-emergency.html"><span class="emergency-card-icon accident-icon"></span><strong>Accident</strong><small>Support</small></a>
+                <a class="emergency-card missing" href="find-help.html"><span class="emergency-card-icon missing-icon"></span><strong>Missing</strong><small>Person</small></a>
+                <a class="emergency-card hospital" href="find-help.html"><span class="emergency-card-icon hospital-icon"></span><strong>Hospital</strong><small>Assistance</small></a>
+                <a class="emergency-card other" href="create-emergency.html"><span class="emergency-card-icon other-icon"></span><strong>Other</strong><small>Emergency</small></a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer home-footer">
+        <p>(c) 2026 HelpNearby. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

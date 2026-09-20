@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Request Details - HelpNearby</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="emergency-request-page emergency-detail-page">
+    <main class="emergency-request-shell">
+        <header class="emergency-request-header">
+            <a class="emergency-brand" href="index.html">
+                <span class="emergency-brand-mark">+</span>
+                <span>Help<span>Nearby</span></span>
+            </a>
+            <a class="back-link" href="find-help.html"><span class="back-icon" aria-hidden="true"></span> Back</a>
+        </header>
+
+        <section class="emergency-detail-card">
+            <div class="detail-heading-row">
+                <div>
+                    <div class="detail-title-line"><span class="detail-category-icon">+</span><h1>Medical Emergency</h1><span class="priority-badge critical-badge">Critical</span></div>
+                    <p class="detail-meta"><span class="location-icon"></span> College Campus <span class="separator-icon"></span> <span class="time-icon"></span> 1.2 km away <span class="separator-icon"></span> 15 Aug 2025, 10:24 AM</p>
+                </div>
+                <div class="detail-map-mini" aria-label="Map showing request location"><span class="map-cross"></span><span class="map-request-pin"></span></div>
+            </div>
+
+            <div class="detail-main-grid">
+                <section class="detail-description-panel">
+                    <h2>Description</h2>
+                    <p>Person needs immediate medical assistance.<br>Accident happened near the main gate.</p>
+                    <div class="detail-photo" aria-label="Emergency location photo"><span>Road photo</span></div>
+                </section>
+
+                <section class="request-info-panel">
+                    <h2>Request Details</h2>
+                    <dl>
+                        <div><dt>Request ID:</dt><dd>#REQ000524</dd></div>
+                        <div><dt>Priority:</dt><dd class="detail-critical">Critical</dd></div>
+                        <div><dt>Category:</dt><dd>Medical Emergency</dd></div>
+                        <div><dt>Location:</dt><dd>College Campus</dd></div>
+                        <div><dt>Created At:</dt><dd>15 Aug 2025, 10:24 AM</dd></div>
+                    </dl>
+                </section>
+            </div>
+
+            <div class="detail-actions">
+                <button class="accept-request-action" type="button">Accept Request</button>
+                <button class="contact-user-action" type="button">Contact User</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

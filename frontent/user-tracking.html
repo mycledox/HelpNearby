@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Tracking - HelpNearby</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="tracking-page">
+    <main class="tracking-shell">
+        <header class="tracking-header">
+            <a class="tracking-brand" href="index.html">
+                <span class="tracking-brand-mark">+</span>
+                <span>Help<span>Nearby</span></span>
+            </a>
+            <a href="dashboard.html" class="tracking-back"><span class="back-icon" aria-hidden="true"></span> Back to Dashboard</a>
+        </header>
+
+        <section class="tracking-card">
+            <div class="tracking-status-panel">
+                <h1>Request Status</h1>
+                <ol class="status-timeline">
+                    <li class="done"><span class="status-check"></span><div><strong>Request Created</strong><small>15 Aug 2025, 10:24 AM</small></div></li>
+                    <li class="done"><span class="status-check"></span><div><strong>Searching for Volunteer</strong><small>15 Aug 2025, 10:26 AM</small></div></li>
+                    <li class="done"><span class="status-check"></span><div><strong>Volunteer Accepted</strong><small>15 Aug 2025, 10:32 AM</small></div></li>
+                    <li class="current"><span class="status-current"></span><div><strong>Help in Progress</strong><small>15 Aug 2025, 10:40 AM</small></div></li>
+                    <li><span class="status-pending"></span><div><strong><a href="help-completed.html">Resolved</a></strong><small>Waiting</small></div></li>
+                </ol>
+            </div>
+
+            <div class="tracking-map-column">
+                <div class="tracking-map" aria-label="Live map showing volunteer route">
+                    <span class="tracking-map-road route-main"></span>
+                    <span class="tracking-map-road route-secondary"></span>
+                    <span class="tracking-pin request-pin"></span>
+                    <span class="tracking-pin volunteer-pin"></span>
+                    <span class="tracking-map-label">Volunteer is on the way<br><strong>ETA: 8 mins</strong></span>
+                </div>
+
+                <section class="eta-card">
+                    <span class="eta-icon"></span>
+                    <div><strong>Volunteer is on the way</strong><small>ETA: 8 mins</small></div>
+                </section>
+
+                <section class="tracking-volunteer-card">
+                    <div class="tracking-volunteer-avatar">AS</div>
+                    <div><small>Volunteer</small><strong>Amir Sharma</strong><span>+91 98765 43210</span></div>
+                    <a class="phone-icon" href="tel:+919876543210" aria-label="Call Amir Sharma"></a>
+                </section>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

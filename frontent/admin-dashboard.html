@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - HelpNearby</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="dashboard-page admin-dashboard-page">
+    <main class="dashboard-shell">
+        <aside class="dashboard-sidebar">
+            <a class="dashboard-brand" href="index.html">
+                <span class="dashboard-brand-mark">+</span>
+                <span>Help<span>Nearby</span></span>
+            </a>
+
+            <div class="dashboard-profile">
+                <div class="profile-avatar admin-profile-avatar">AD</div>
+                <div>
+                    <strong>Admin</strong>
+                    <small>Administrator</small>
+                </div>
+            </div>
+
+            <nav class="dashboard-nav" aria-label="Admin dashboard navigation">
+                <a class="active" href="admin-dashboard.html"><span class="nav-icon dashboard-icon"></span> Dashboard</a>
+                <a href="find-help.html"><span class="nav-icon users-icon"></span> Manage Users</a>
+                <a href="volunteer-dashboard.html"><span class="nav-icon volunteer-icon"></span> Manage Volunteers</a>
+                <a href="emergency-requests.html"><span class="nav-icon alert-icon"></span> Emergency Requests</a>
+                <a href="about.html"><span class="nav-icon categories-icon"></span> Categories</a>
+                <a href="contact.html"><span class="nav-icon reports-icon"></span> Reports</a>
+                <a href="index.html"><span class="nav-icon logout-icon"></span> Logout</a>
+            </nav>
+        </aside>
+
+        <section class="dashboard-content admin-content">
+            <header class="dashboard-topbar admin-topbar">
+                <div>
+                    <p class="dashboard-kicker">Admin Dashboard</p>
+                    <p class="dashboard-subtitle">Monitor HelpNearby activity and emergency support.</p>
+                </div>
+                <div class="dashboard-actions">
+                    <button class="notification-button" aria-label="Notifications"></button>
+                    <div class="small-avatar admin-small-avatar">AD</div>
+                </div>
+            </header>
+
+            <section class="admin-stats" aria-label="Platform summary">
+                <article class="admin-stat"><small>Total Users</small><strong>124</strong><span class="admin-stat-blue">+12 this month</span></article>
+                <article class="admin-stat"><small>Total Volunteers</small><strong>48</strong><span class="admin-stat-violet">+5 this month</span></article>
+                <article class="admin-stat"><small>Total Requests</small><strong>36</strong><span class="admin-stat-orange">+8 this week</span></article>
+                <article class="admin-stat"><small>Active Requests</small><strong>8</strong><span class="admin-stat-red">Needs attention</span></article>
+            </section>
+
+            <section class="admin-table-panel">
+                <div class="dashboard-section-heading admin-table-heading">
+                    <h2>Recent Requests</h2>
+                    <a href="request-help.html">View All <span class="arrow-icon" aria-hidden="true"></span></a>
+                </div>
+
+                <div class="admin-table-wrap">
+                    <table class="admin-request-table">
+                        <thead>
+                            <tr><th>Request ID</th><th>Category</th><th>Priority</th><th>Status</th><th>Date</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>#REQ001</td><td>Medical Emergency</td><td><span class="priority-badge critical-badge">Critical</span></td><td><span class="admin-status progress">In Progress</span></td><td>15 Aug</td></tr>
+                            <tr><td>#REQ002</td><td>Blood Requirement</td><td><span class="priority-badge urgent-badge">Urgent</span></td><td><span class="admin-status accepted">Accepted</span></td><td>14 Aug</td></tr>
+                            <tr><td>#REQ003</td><td>Accident</td><td><span class="priority-badge normal-badge">Normal</span></td><td><span class="admin-status resolved">Resolved</span></td><td>12 Aug</td></tr>
+                            <tr><td>#REQ004</td><td>Fire</td><td><span class="priority-badge urgent-badge">Urgent</span></td><td><span class="admin-status resolved">Resolved</span></td><td>10 Aug</td></tr>
+                            <tr><td>#REQ005</td><td>Missing Person</td><td><span class="priority-badge normal-badge">Normal</span></td><td><span class="admin-status open">Open</span></td><td>08 Aug</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </section>
+    </main>
+</body>
+</html>
